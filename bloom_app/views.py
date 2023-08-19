@@ -9,6 +9,9 @@ class IndexView(TemplateView):
 class ShopView(TemplateView):
     template_name = "shop.html"
 
+    def get(self, request):
+        return render(request, self.template_name)
+
 
 
 # def about(request):
